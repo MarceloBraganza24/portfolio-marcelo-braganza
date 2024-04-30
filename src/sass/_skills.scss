@@ -1,0 +1,24 @@
+.skillsContainer {
+    background-color: rgb(6, 3, 50);
+    width: 20%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translate(0%, -50%);
+    padding: 2vh 0vh;
+    border-radius: 5vh;
+    border: 0.5vh solid saddlebrown;
+    color: white;
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 2vh;
+        border-bottom: 0.5vh solid saddlebrown;
+    }
+    &__item {
+        font-size: 16px;
+        padding: 2vh 0vh 2vh 1vh;
+    }
+}

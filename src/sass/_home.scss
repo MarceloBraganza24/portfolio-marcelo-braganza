@@ -1,0 +1,107 @@
+.homeContainer {
+    background-color: rgb(10, 5, 80);
+    width: 100%;
+    height: auto;
+    @include disFC();
+    padding: 3vh 0vh;
+    &__cv {
+        background-color: rgb(6, 3, 50);
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border: 0.5vh solid saddlebrown;
+        border-radius: 5vh;
+        &__header {
+            width: 100%;
+            height: 40vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+            border-bottom: 0.5vh solid saddlebrown;
+            &__photoContainer {
+                width: 100%;
+                height: auto;
+                @include disFC();
+                &__photo {
+                    width: 100%;
+                    height: auto;
+                    @include disFC();
+                    border-right: 0.5vh solid saddlebrown;
+                    &__prop {
+                        background-color: whitesmoke;
+                        width: 70%;
+                        height: auto;
+                        padding: 1vh;
+                        border-radius: 12vh;
+                    }
+                }
+            }   
+            &__name {
+                width: 100%;
+                height: auto;
+                @include disFC();
+                &__prop {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+        &__body {
+            background-color: rgb(4, 1, 67);
+            width: 100%;
+            height: auto;
+            color: white;
+            border-radius: 5vh;
+            &__h3 {
+                background-color: whitesmoke;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                padding: 2vh;
+                border-bottom: 0.5vh solid saddlebrown;
+            }
+            &__formation {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                border-bottom: 0.5vh solid saddlebrown;
+                &__career {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 0.5vh solid rgb(10, 5, 80);
+                    padding: 2vh 0vh;
+                    &__title {
+                        padding-left: 1vh;
+                        font-size: 25px;
+                    }
+                    &__description {
+                        padding-left: 1vh;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__employmentHistory {
+                width: 100%;
+                height: auto;
+                padding: 3vh 1vh 3vh 1vh;
+                &__item {
+                    font-size: 25px;
+                }
+            }
+            &__languages {
+                width: 100%;
+                height: auto;
+                padding: 3vh 1vh 3vh 1vh;
+                &__item {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
