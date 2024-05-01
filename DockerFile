@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # exponemos el puerto 8080 del contenedor para conectarnos a la app desde el pc local
-EXPOSE 3000
+EXPOSE 5173
 
 # definimos el comando que se ejecutara al iniciar el contenedor
 CMD ["npm", "start"]
