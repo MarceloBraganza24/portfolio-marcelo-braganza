@@ -1,13 +1,20 @@
-FROM node:16-alpine AS node
+# definimos la imagen que tomamos como base
+FROM node:18-alpine
 
+# definimos el directorio de trabajo dentro de nuestro contenedor
 WORKDIR /app
 
-COPY package*.json ./
+# copiamos el package.json dentro del contenedor
+COPY package*.json .
 
+# instalamos dependencias dentro del contenedor
 RUN npm install
 
+# copiamos el resto de archivos incluyendo nuestro codigo
 COPY . .
 
+# exponemos el puerto 8080 del contenedor para conectarnos a la app desde el pc local
 EXPOSE 3000
 
+# definimos el comando que se ejecutara al iniciar el contenedor
 CMD ["npm", "start"]
