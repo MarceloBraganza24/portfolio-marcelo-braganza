@@ -25,7 +25,7 @@ const Main = () => {
           </div>
         </div>
         <div className='homeContainer__cv__body'>
-          <h3 className='homeContainer__cv__body__h3'>- Formación -</h3>
+          <h3 className='homeContainer__cv__body__h3'>- Formación académica -</h3>
           <div className='homeContainer__cv__body__formation'>
             <div className='homeContainer__cv__body__formation__career'>
               <div className='homeContainer__cv__body__formation__career__title'>- Carrera Desarrollo Full Stack</div>
